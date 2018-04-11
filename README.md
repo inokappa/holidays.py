@@ -1,5 +1,12 @@
 # holidays.py
+<!--ts-->
+   * [holidays.py](#holidayspy)
+      * [これなに](#これなに)
+      * [使い方](#使い方)
 
+<!-- Added by: kappa, at: 2018-04-11T09:34+09:00 -->
+
+<!--te-->
 ## これなに
 
 内閣府が提供する祝日・休日情報の csv を JSON フォーマットで生成して Amazon S3 のバケットに保存する Python スクリプトです.
