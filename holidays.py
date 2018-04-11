@@ -36,7 +36,11 @@ def convertDict(decoded_content):
             line[1] = '振替休日'
         data[line[0]] = line[1]
 
-    return data
+    sorted_data = {}
+    for k, v in sorted(data.items(), key=lambda x: x[0]):
+        sorted_data[k] = v
+
+    return sorted_data
 
     
 def getYears(contents):
