@@ -6,7 +6,7 @@ import requests
 import boto3
 import holidays
 
-class HolidayPyTest(unittest.TestCase):
+class HolidaysPyTest(unittest.TestCase):
    @classmethod
    def setUp(self):
        os.environ["BUCKET_NAME"] = "holiday-py"
@@ -22,7 +22,7 @@ class HolidayPyTest(unittest.TestCase):
    def test_decode_content(self):
        self.assertEqual(holidays.decodeContent(b'\x82\xa0'), 'あ')
 
-   def test_convert_json(self):
+   def test_convert_dict(self):
        contents = '''国民の祝日・休日月日,国民の祝日・休日名称
 2017-01-01,元日
 2017-01-02,休日
