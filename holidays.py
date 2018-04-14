@@ -85,7 +85,7 @@ def saveAllData(contents):
 
 
 def main():
-    '''
+    '''Main
     '''
     res = getHolidayCsv()
     decoded_content = decodeContent(res)
