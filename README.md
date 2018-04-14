@@ -1,4 +1,5 @@
 # holidays.py
+[![Build Status](https://travis-ci.org/inokappa/holidays.py.svg?branch=master)](https://travis-ci.org/inokappa/holidays.py)
 <!--ts-->
    * [holidays.py](#holidayspy)
       * [これなに](#これなに)
@@ -11,7 +12,7 @@
 
 内閣府が提供する祝日・休日情報の csv を JSON フォーマットで生成して Amazon S3 のバケットに保存する Python スクリプトです.
 
-Python 3.6.x 以上での動作を確認しています.
+Python 3.4.x 以上での動作を確認しています.
 
 ## 使い方
 
