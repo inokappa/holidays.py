@@ -88,6 +88,5 @@ class HolidaysPyTest(unittest.TestCase):
         sorted_body = {}
         for k, v in sorted(json.loads(body).items(), key=lambda x: x[0]):
             sorted_body[k] = v
-        json_body = json.dumps(sorted_body, ensure_ascii=False)
 
-        self.assertEqual(json_body, data)
+        self.assertDictEqual(sorted_body, json.loads(data))
