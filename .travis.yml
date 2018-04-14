@@ -5,9 +5,12 @@ python:
   - 3.5
   - 3.6
 
-install:
-  - pip install tox tox-travis
-  - pip install coverage coveralls
+# install:
+#   - pip install tox tox-travis
+#   - pip install coverage coveralls
+
+# script:
+#   - tox -r
 
 script:
-  - tox -r
+  - invoke test
